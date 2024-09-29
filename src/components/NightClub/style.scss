@@ -1,0 +1,90 @@
+.nightclub-container {
+  // margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  .profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .profile-icon {
+      width: 40px; // Adjust size as needed
+      height: 40px; // Adjust size as needed
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .nightclub-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+  .show-image-container {
+    position: relative;
+
+    .show-image {
+      width: 100%; // Responsive
+      height: auto; // Keep aspect ratio
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+      ); // Black background with transparency
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+
+      .overlay-text {
+        font-size: 86px; // Large text
+        font-weight: bold;
+        margin: 0;
+        color: yellow;
+      }
+
+      .overlay-date {
+        font-size: 86px;
+        font-weight: bold;
+        color: yellow;
+        // Date text
+        margin-top: 5px;
+      }
+    }
+  }
+  .description {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .details-button {
+    width: 100%;
+    text-align: end;
+    button {
+      padding: 7px 40px;
+      cursor: pointer;
+      font-size: 20px;
+      border: 2px solid rgb(26, 176, 26);
+      color: rgb(26, 176, 26);
+      margin: 0 auto;
+      border-radius: 10px;
+      background: none;
+    }
+  }
+}

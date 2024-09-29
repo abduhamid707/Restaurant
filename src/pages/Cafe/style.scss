@@ -1,0 +1,57 @@
+.cafe {
+  .comment_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // justify-content: left;
+    .comments {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 150px;
+      background: orange;
+      padding: 8px 20px;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 500;
+
+      span {
+        text-align: left;
+      }
+      span:nth-child(1) {
+        color: white;
+      }
+    }
+  }
+  .stars_wrapper {
+    display: flex;
+    justify-content: end;
+  }
+  .restaurant_categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .category-item {
+      padding: 4px 9px;
+      background-color: gray;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 13px;
+
+      &.active {
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+  .res_rules {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}

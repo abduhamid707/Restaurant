@@ -1,0 +1,82 @@
+.vacancy-card {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding: 15px;
+  // border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #d5d4d48a;
+  }
+  .vacancy_detailes_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    &-org-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .vacancy-card__user-image {
+    .vacancy-card__img {
+      width: 130px;
+      height: 130px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    // text-align: right;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 20px;
+
+    &-type, &-salary {
+      margin: 5px 0;
+    }
+  }
+}
+
+.vacancies {
+  &__filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+
+    .filter-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

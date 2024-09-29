@@ -1,0 +1,98 @@
+.stars-wrapper {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .stars {
+    font-size: 24px;
+    color: #ffd700;
+    cursor: pointer;
+    display: flex;
+    .star_bg {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: orange;
+      margin: 5px;
+      border-radius: 5px;
+      i {
+        // margin: 5px;
+        font-size: 20px;
+        color: white;
+      }
+    }
+
+    .bi-star-fill {
+      color: #ffffff;
+    }
+
+    .bi-star {
+      color: #ddd;
+    }
+  }
+
+  .feedback {
+    margin-top: 20px;
+
+    .like-dislike {
+      font-size: 24px;
+      margin-bottom: 15px;
+
+      i {
+        margin: 10px;
+        cursor: pointer;
+        transition: color 0.2s;
+        border-radius: 5px;
+        padding: 5px;
+
+        &:hover {
+          color: #28a745;
+        }
+      }
+
+      .bi-hand-thumbs-up-fill,
+      .bi-hand-thumbs-down-fill {
+        color: #28a745;
+      }
+    }
+
+    .comment {
+      .comment-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        resize: none;
+      }
+
+      .comment-input:focus {
+        border-color: #28a745;
+      }
+    }
+    .send-button {
+      width: 100%; // Make the button take full width
+      padding: 10px; // Add some padding for better touch target
+      background-color: #4caf50; // Change background color
+      color: white; // Change text color
+      border: none; // Remove default border
+      border-radius: 5px; // Add border radius for rounded corners
+      cursor: pointer; // Change cursor on hover
+
+      &:hover {
+        background-color: #45a049; // Darker green on hover
+      }
+
+      &:focus {
+        outline: none; // Remove outline on focus
+      }
+    }
+
+    textarea {
+      &.error {
+        border: 2px solid red;
+      }
+    }
+  }
+}

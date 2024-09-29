@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sm-wrapper {
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  position: relative;
+}
+@media (max-width: 768px) {
+  /* Mobil uchun maxsus uslublar */
+}

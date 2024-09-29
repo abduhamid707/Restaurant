@@ -1,0 +1,51 @@
+.shows_all_cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.view-all-button {
+  padding: 7px 40px;
+  font-size: 20px;
+  border: 2px solid rgb(26, 176, 26);
+  color: rgb(26, 176, 26);
+  margin: 10px auto;
+  border-radius: 10px;
+  background: none;
+}
+.view-all-button_shows  {
+  padding: 7px 40px;
+  font-size: 20px;
+  // border: 2px solid rgb(26, 176, 26);
+  border: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 10px auto;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.497);
+  width: 100%;
+  i{
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+}
+.nightclub-page {
+  margin-top: 50px;
+}
+
+.ads {
+  .ads_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    .card-img {
+      margin-right: 5px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 86px;
+    margin: 5px;
+  }
+}

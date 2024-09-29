@@ -1,0 +1,53 @@
+.category-card {
+  text-align: center;
+  padding: 0px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 20px auto;
+
+  .category-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+    text-align: left;
+  }
+
+  .category-images {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+
+    .category-image {
+      width: 150px;
+      margin-left: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .category-image:nth-child(1) {
+      margin-left: 0px;
+    }
+  }
+
+  .category-address,
+  .category-hours {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .contact-button {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}

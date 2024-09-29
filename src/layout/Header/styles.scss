@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  align-items: center !important;
+  .select-container {
+    position: relative;
+  }
+  .select-container i {
+    position: absolute;
+    top: 55%;
+    right: -9px; /* O'ng tomondan masofa */
+    transform: translateY(-50%);
+    pointer-events: none; /* Select bosilganda ikonka bilan o'zaro aloqa bo'lmasligi uchun */
+    font-size: 16px;
+    color: #000; /* Ikonka rangi */
+  }
+}
+.sidebar {
+  position: absolute;
+  left: -1000%;
+  z-index: 111;
+  height: 100vh;
+  background: gainsboro;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: right 0.3s ease;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px;
+
+    }
+  }
+}
+.open {
+  left: 0;
+}
+.header {
+  .menu-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  i {
+    font-size: 50px;
+    font-weight: bold !important;
+  }
+  select {
+    border: none; /* Border olib tashlash */
+    outline: none; /* Fokusda qalin chiziq ko'rinmasligi uchun */
+    background: transparent; /* Orqa fonni shaffof qilish (agar kerak bo'lsa) */
+    appearance: none; /* Brauzer standart uslublarini olib tashlash */
+    padding: 10px; /* Select elementining ichki bo'shlig'ini oshirish uchun */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  select:focus {
+    outline: none; /* Fokus holatida hech qanday border ko'rinmasligi uchun */
+  }
+  option {
+    border: none; /* Border olib tashlash */
+    background: #fff; /* Oq orqa fon */
+    color: #000;
+  }
+}

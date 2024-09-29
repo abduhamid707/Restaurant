@@ -1,0 +1,61 @@
+.categories_wrapper {
+  input[type='text'] {
+    outline: none; /* Removes the outline (focus ring) */
+    border: 1px solid #ccc; /* Sets a visible border */
+    padding: 8px;
+    border-radius: 4px;
+
+    /* Optional: To remove additional styles like box-shadow, background, etc. */
+    box-shadow: none;
+    background-color: transparent;
+
+    /* Optional: Style for focused input */
+    &:focus {
+      border-color: #000000; /* Border color change on focus */
+    }
+  }
+}
+.categories {
+  width: 100%;
+  max-width: 800px;
+  margin: 15px auto;
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .tab {
+      //   flex: 1;
+      padding: 5px 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      width: 300px !important;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 0px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+
+      &.active {
+        background-color: #4caf50;
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    .tab-content {
+      background-color: #fff;
+      padding: 20px;
+    //   border: 1px solid #ccc;
+      border-radius: 5px;
+    //   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+    }
+  }
+}
