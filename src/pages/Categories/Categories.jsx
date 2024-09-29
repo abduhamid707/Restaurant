@@ -8,7 +8,14 @@ import cat_2_img from '../../assets/cat2.png';
 const Categories = () => {
   const [activeTab, setActiveTab] = useState('nearest'); // Default tab
   const [searchTerm, setSearchTerm] = useState(''); // Search term state
+  // const [activeCat, setActiveCat] = useState(null);
+  const [activeCat, setActiveCat] = useState('reyting'); // Dastlabki holatda 'cat1' active
 
+  const handleCatClick = (cat) => {
+    setActiveCat(cat);
+    console.log(cat); // Faol bo'lgan cat nomini console'ga chiqaradi
+  };
+  const cats = ["qo'shish", "reyting", "filter"];
   // Handle Tab Change
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -45,6 +52,14 @@ const Categories = () => {
     cafe.name.toLowerCase().includes(searchTerm)
   );
 
+
+  // Kategoriya tugmasini bosganda faol holatga o'tkazish
+  // const handleCatClick = (cat) => {
+  //   setActiveCat(cat);
+  //   console.log(cat); // Faol bo'lgan kategoriya nomini console'ga chiqaradi
+  // };
+  // let cats = ["cat1", 'cat2', 'cat3'];
+
   return (
     <section className="categories_wrapper">
       <div className="container">
@@ -52,7 +67,7 @@ const Categories = () => {
         <form className="form-controller mt-4">
           <input
             type="text"
-            className="form-control"
+            className="form-control bg-white"
             placeholder="Search for cafes..."
             value={searchTerm}
             onChange={handleSearch}
@@ -62,53 +77,27 @@ const Categories = () => {
         {/* Tabs */}
         <div className="categories">
           <div className="tabs">
-            <button
-              className={activeTab === 'nearest' ? 'tab active' : 'tab'}
-              onClick={() => handleTabChange('nearest')}
-            >
-              Eng yaqinlari
-            </button>
-            <button
-              className={activeTab === 'top-rated' ? 'tab active' : 'tab'}
-              onClick={() => handleTabChange('top-rated')}
-            >
-              Reytingi yuqorilari
-            </button>
+            {cats.map((cat, index) => (
+              <button
+                key={index}
+                className={`tab ${activeCat === cat ? 'tab active' : 'tab'}`}
+                onClick={() => handleCatClick(cat)}
+              >
+                {cat}
+              </button>
+            ))}
           </div>
 
-          {/* Tab Content */}
           <div className="content">
-            {activeTab === 'nearest' && (
-              <div className="tab-content">
-                {/* Eng yaqinlari (nearest) content */}
-                {filteredCafes.map((cafe) => (
-                  <React.Fragment key={cafe.id}>
-                    <CategoryCard data={cafe} />
-                    <Line /> {/* Line after each CategoryCard */}
-                  </React.Fragment>
-                ))}
-              </div>
-            )}
-
-            {activeTab === 'top-rated' && (
-              <div className="tab-content">
-                {/* Reytingi yuqorilari (top-rated) content */}
-                {filteredCafes
-                  .filter((cafe) => cafe.rating >= 4.5) // Filter top-rated cafes
-                  .map((cafe) => (
-                    <React.Fragment key={cafe.id}>
-                      <CategoryCard data={cafe} />
-                      <Line /> {/* Line after each CategoryCard */}
-                    </React.Fragment>
-                  ))}
-
-                {/* If no top-rated cafes */}
-                {filteredCafes.filter((cafe) => cafe.rating >= 4.5).length === 0 && (
-                  <p>No top-rated cafes available.</p>
-                )}
-              </div>
-            )}
+            <div className="tab-content">
+              {filteredCafes.map((cafe) => (
+                <React.Fragment key={cafe.id}>
+                  <CategoryCard data={cafe} />
+                </React.Fragment>
+              ))}
+            </div>
           </div>
+
         </div>
       </div>
     </section>

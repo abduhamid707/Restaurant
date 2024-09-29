@@ -1,6 +1,6 @@
 .stars-wrapper {
   text-align: left;
-  margin-top: 20px;
+  // margin-top: 20px;
   margin-bottom: 20px;
   .stars {
     font-size: 24px;
@@ -58,6 +58,7 @@
     }
 
     .comment {
+      // position: absolute;
       .comment-input {
         width: 100%;
         padding: 10px;

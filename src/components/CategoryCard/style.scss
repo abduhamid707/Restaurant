@@ -1,21 +1,30 @@
 .category-card {
   text-align: center;
-  padding: 0px;
   border-radius: 8px;
-  max-width: 1000px;
-  margin: 20px auto;
-
+  max-width: 768px;
+  width: 100%;
+  background: white;
+  margin-top: 14px;
+  padding: 14px;
   .category-title {
     font-size: 30px;
     margin-bottom: 10px;
 
     text-align: left;
   }
-
+  .rayting_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-weight: 800;
+      font-size: 17px;
+    }
+  }
   .category-images {
     display: flex;
     justify-content: start;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     .category-image {
       width: 150px;
@@ -45,7 +54,6 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-
     &:hover {
       background-color: #218838;
     }

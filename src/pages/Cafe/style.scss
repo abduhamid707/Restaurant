@@ -13,7 +13,7 @@
       background: orange;
       padding: 8px 20px;
       border-radius: 16px;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 500;
 
       span {
@@ -27,6 +27,7 @@
   .stars_wrapper {
     display: flex;
     justify-content: end;
+    
   }
   .restaurant_categories {
     display: flex;
@@ -34,17 +35,17 @@
     margin-top: 20px;
     margin-bottom: 20px;
     .category-item {
-      padding: 4px 9px;
+      padding: 10px 20px;
       background-color: gray;
       color: white;
       border: none;
       cursor: pointer;
       font-weight: bold;
       border-radius: 10px;
-      font-size: 13px;
+      font-size: 17px;
 
       &.active {
-        background-color: green;
+        background-color: rgb(150, 1, 183);
         color: white;
       }
     }

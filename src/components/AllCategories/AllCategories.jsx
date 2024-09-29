@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../Cards/Card';
 import kafe_img from "../../assets/kafe.png"; // Ensure you have the correct path to your images
 import res_img from "../../assets/restaurant.png";
+import Line from '../Line/Line';
 const AllCategories = () => {
     const cafes = [
         { id: "1", title: "Kafe 1", count: 10, img: kafe_img },
@@ -15,7 +16,8 @@ const AllCategories = () => {
     ];
     return (
         <>
-            <div className="container mt-5">
+            <Line/>
+            <div className="container mt-1">
             {cafes.map(cafe => (
                 <Card key={cafe.id} id={cafe.id} title={cafe.title} count={cafe.count} img={cafe.img} />
             ))}

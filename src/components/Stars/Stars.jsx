@@ -45,24 +45,24 @@ const Stars = ({ on, sideRight }) => {
 
     const handleSend = () => {
         const { like, comment } = feedback;
-        let likeError = false;
+        // let likeError = false;
         let commentError = false;
 
         // Validation
-        if (!like) {
-            likeError = true;
-        }
+        // if (!like) {
+        //     likeError = true;
+        // }
         if (comment.trim() === '') {
             commentError = true;
         }
 
-        setErrors({ likeError, commentError });
+        setErrors({ commentError });
 
         // If no errors, submit the form
-        if (!likeError && !commentError) {
+        if (!commentError) {
             console.log({
                 rating,
-                feedback: feedback.like,
+                // feedback: feedback.like,
                 comment: feedback.comment
             });
 
@@ -100,7 +100,7 @@ const Stars = ({ on, sideRight }) => {
                         </motion.div>
                     ))}
                 </div>
-                <div className="like-dislike">
+                {/* <div className="like-dislike">
                     <i
                         className={feedback.like === 'like' ? "bi bi-hand-thumbs-up-fill" : "bi bi-hand-thumbs-up"}
                         onClick={() => handleLikeDislike('like')}
@@ -111,7 +111,7 @@ const Stars = ({ on, sideRight }) => {
                         onClick={() => handleLikeDislike('dislike')}
                         style={errors.likeError ? { border: '2px solid red' } : {}}
                     ></i>
-                </div>
+                </div> */}
             </div>
             {isRated && (
                 <motion.div
@@ -133,12 +133,13 @@ const Stars = ({ on, sideRight }) => {
                             onChange={handleCommentChange}
                             style={errors.commentError ? { border: '2px solid red' } : {}}
                         ></textarea>
-                    </div>
-
-                    {/* Send Button */}
+                                        {/* Send Button */}
                     <button className="send-button" onClick={handleSend}>
                         Send
                     </button>
+                    </div>
+
+    
                 </motion.div>
             )}
         </div>

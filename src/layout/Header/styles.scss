@@ -1,8 +1,16 @@
+.header {
+  background: rgb(150, 1, 183);
+  color: white;
+}
 .navbar {
   display: flex;
   align-items: center !important;
+  // background: white;
   .select-container {
     position: relative;
+    select {
+      color: white !important;
+    }
   }
   .select-container i {
     position: absolute;
@@ -11,7 +19,7 @@
     transform: translateY(-50%);
     pointer-events: none; /* Select bosilganda ikonka bilan o'zaro aloqa bo'lmasligi uchun */
     font-size: 16px;
-    color: #000; /* Ikonka rangi */
+    color: white !important;
   }
 }
 .sidebar {
@@ -23,7 +31,8 @@
   width: 250px;
   height: 100vh;
   background-color: #333;
-  color: #fff;
+  color: white !important;
+
   padding: 20px;
   transition: right 0.3s ease;
 
@@ -36,10 +45,10 @@
     }
 
     a {
-      color: #fff;
+      color: white !important;
+
       text-decoration: none;
       font-size: 25px;
-
     }
   }
 }
@@ -76,5 +85,10 @@
     border: none; /* Border olib tashlash */
     background: #fff; /* Oq orqa fon */
     color: #000;
+  }
+}
+.langs {
+  select {
+    color: #fff; // White text
   }
 }

@@ -17,19 +17,22 @@ const CategoryCard = ({ data }) => {
 
             {/* Image */}
             <div className="category-images">
-            {data.images.map((image, idx) => (
-          <img
-            key={idx}
-            src={image}
-            alt={`${data.name} ${idx + 1}`}
-            className="category-image"
-            onClick={() => handleImageClick(data.id)} // Navigate to cafe with specific id
-          />
-        ))}
+                {data.images.slice(0, 3).map((image, idx) => (
+                    <img
+                        key={idx}
+                        src={image}
+                        alt={`${data.name} ${idx + 1}`}
+                        className="category-image"
+                        onClick={() => handleImageClick(data.id)} // Navigate to cafe with specific id
+                    />
+                ))}
             </div>
 
             {/* Stars */}
-            <Stars />
+            <div className="rayting_wrap">
+                <Stars />
+                <span>Fikrlar: 91</span>
+            </div>
 
             {/* Address */}
             <div className="category-address">

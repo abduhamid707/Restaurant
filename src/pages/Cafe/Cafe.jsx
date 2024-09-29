@@ -21,7 +21,7 @@ const Cafe = () => {
         { id: 'home', label: 'Бош сахифа' },
         { id: 'menu', label: 'Меню' },
         { id: 'offers', label: 'Акциялар' },
-        { id: 'vacancies', label: 'Ваканциялар' },
+        // { id: 'vacancies', label: 'Ваканциялар' },
     ];
     const contactData = [
         {
@@ -52,7 +52,7 @@ const Cafe = () => {
         { day: 'Payshanba', time: '09:00 - 22:00' },
         { day: 'Juma', time: '09:00 - 22:00' },
         { day: 'Shanba', time: '09:00 - 22:00' },
-        { day: 'Yakshanba', time: 'Dam olish kuni' } // Optional
+        { day: 'Yakshanba', time: 'Dam olish kuni' } 
     ];
     const images = [res_img_1, res_img_2, res_img_3];
     return (
@@ -66,8 +66,8 @@ const Cafe = () => {
                             <span>|  38</span>
                         </div>
                         <div className=" stars_wrapper ">
-                        <Stars />
-                    </div>
+                            <Stars />
+                        </div>
                     </div>
                 </div>
                 <Line />
