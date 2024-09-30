@@ -23,8 +23,6 @@ const Home = () => {
         { id: "7", title: "Kafe 7", count: 20, img: kafe_img },
         { id: "8", title: "Kafe 8", count: 8, img: res_img },
     ];
-
-
     // Function to toggle showing all cafes
     const handleShowAll = () => {
         navigate("/categories");

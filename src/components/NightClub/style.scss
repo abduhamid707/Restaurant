@@ -73,18 +73,20 @@
     color: #555;
   }
 
+
+}
   .details-button {
     width: 100%;
     text-align: end;
     button {
       padding: 7px 40px;
-      cursor: pointer;
       font-size: 20px;
-      border: 2px solid rgb(26, 176, 26);
-      color: rgb(26, 176, 26);
-      margin: 0 auto;
+      border: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      margin-top: -20px;
       border-radius: 10px;
-      background: none;
-    }
+      background: rgba(128, 128, 128, 0.497);
+      width: 97%;
   }
-}
+  }

@@ -43,7 +43,7 @@ const CategoryCard = ({ data }) => {
             <div className="category-hours">
                 <p><strong>Work Hours:</strong> {data.workHours}</p>
             </div>
-
+ 
             {/* Contact Button */}
             <div className="category-contact">
                 <a href="tel:+998997867075">

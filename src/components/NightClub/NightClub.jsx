@@ -29,7 +29,6 @@ const NightClub = ({ data }) => {
             </div>
             <p className="description"><h3>{description}</h3></p>
             <div className="details-button">
-
                 {paragrphCheck != true &&
                     <button className="ml-auto" onClick={handleDetailClick}>
                         Batafsil

@@ -9,7 +9,7 @@ import "./style.scss"
 const HeroTop = () => {
     return (
         <>
-            <div className="hero-container"> 
+            <div className="hero-container container my-2"> 
                 <Swiper
                     modules={[Autoplay]} // Autoplay funksiyasini ishlatish uchun modul
                     autoplay={{ delay: 3000 }} // Rasmlarning avtomatik o'zgarishi, 3 soniyada bir marta
