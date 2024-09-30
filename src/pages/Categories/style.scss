@@ -30,14 +30,14 @@
 
     .tab {
       //   flex: 1;
-      padding: 10px 22px;
+      padding: 10px 25px;
       background-color: gray;
       color: white;
       border: none;
       cursor: pointer;
       font-weight: bold;
       border-radius: 10px;
-      font-size: 17px;
+      font-size: 15px;
       // &:hover {
       //   background-color: #e0e0e0;
       // }
@@ -48,7 +48,7 @@
         color: white;
       }
     }
-    .tab:nth-child(1){
+    .tab:nth-child(1) {
       // width: 80px !important;
     }
   }

@@ -11,7 +11,7 @@ const CategoryCard = ({ data }) => {
     };
 
     return (
-        <div className="category-card">
+        <div className="category-card" onClick={() => handleImageClick(data.id)}>
             {/* Title */}
             <h3 className="category-title">{data.name}</h3>
 
@@ -23,13 +23,12 @@ const CategoryCard = ({ data }) => {
                         src={image}
                         alt={`${data.name} ${idx + 1}`}
                         className="category-image"
-                        onClick={() => handleImageClick(data.id)} // Navigate to cafe with specific id
                     />
                 ))}
             </div>
 
             {/* Stars */}
-            <div className="rayting_wrap">
+            <div className="rayting_wrap" onClick={(e) => e.stopPropagation()}>
                 <Stars />
                 <span>Fikrlar: 91</span>
             </div>
@@ -43,9 +42,9 @@ const CategoryCard = ({ data }) => {
             <div className="category-hours">
                 <p><strong>Work Hours:</strong> {data.workHours}</p>
             </div>
- 
+
             {/* Contact Button */}
-            <div className="category-contact">
+            <div className="category-contact" onClick={(e) => e.stopPropagation()}>
                 <a href="tel:+998997867075">
                     <button className="contact-button">Bog'lanish</button>
                 </a>
