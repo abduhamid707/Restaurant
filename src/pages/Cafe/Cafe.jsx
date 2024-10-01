@@ -71,7 +71,6 @@ const Cafe = () => {
                     </div>
                 </div>
                 <Line />
-
                 <div className="restaurant_categories">
                     {categories.map((category) => (
                         <button

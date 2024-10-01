@@ -12,7 +12,11 @@
 }
 body{
   background: rgba(217, 213, 213, 0.277);
+  display: none;
 }
 @media (max-width: 768px) {
+  body{
+    display: block !important;
+  }
   /* Mobil uchun maxsus uslublar */
 }
