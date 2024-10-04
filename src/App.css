@@ -3,15 +3,21 @@
   padding: 0;
 }
 .sm-wrapper {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   border-left: 1px solid #00000018;
   border-right: 1px solid #00000018;
   position: relative;
 }
+/* Scroll chizig'ini olib tashlash */
+.container {
+
+}
+
 body{
   background: rgba(217, 213, 213, 0.277);
+  
 }
 @media (max-width: 768px) {
   body{    
